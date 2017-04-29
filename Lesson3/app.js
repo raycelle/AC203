@@ -52,10 +52,20 @@ ctx3.stroke();
 ctx3.fillStyle = "green";
 ctx3.fill();
 
+
+var mario = new Image();
+mario.src = "mario.png";
+
+mario.onload = function(){
+	ctx4.drawImage(mario,150,300,70,100);
+}
+
+
 var c4 = document.getElementById("myCanvas4");
 var ctx4 = c4.getContext('2d');
-ctx4.fillStyle = "green";
-ctx4.fillRect(0,350,800,150);
-ctx4.fillStyle = "cyan";
-ctx4.fillRect(0,0,800,350);
+
+// ctx4.fillStyle = "green";
+// ctx4.fillRect(0,350,800,150);
+// ctx4.fillStyle = "cyan";
+// ctx4.fillRect(0,0,800,350);
 
