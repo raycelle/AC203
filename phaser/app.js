@@ -1,6 +1,6 @@
 console.log("test")
 
-var game = new Phaser.game(800,600, Phaser.AUTO,'',
+var game = new Phaser.Game(800,600, Phaser.AUTO,'',
 	{preload:preload, create:create, update: update});
 
 function preload(){
@@ -8,7 +8,7 @@ function preload(){
 }
 
 function create(){
-	game.add.sprite(400, 300, 'star');
+	game.add.sprite(0, 0, 'star');
 
 }
 
