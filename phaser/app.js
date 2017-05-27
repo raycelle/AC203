@@ -69,7 +69,7 @@ function create(){
   cursors = game.input.keyboard.createCursorKeys();
 
   // Create the stars
-  stars = game.add.physicsGroup():
+  stars = game.add.physicsGroup();
   stars.enableBody = true;
   // We will create 12 stars evenly spaced
   for(var i = 0; i < 12; i++){
